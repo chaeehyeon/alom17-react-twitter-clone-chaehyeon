@@ -32,7 +32,7 @@ export const Input = styled.input`
     border:none;
     width:100%;
     font-size:16px;
-    &[type="submit]{
+    &[type="submit"]{
     cursor:pointer;
     &:hover{
     opacity:0.8;

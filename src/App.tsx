@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import styled, { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import { useEffect, useState } from "react";
-
+import ResetPassword from "./routes/reset-password";
 import Layout from "./components/layout";
 import Home from "./routes/home";
 import Profile from "./routes/profile";
@@ -38,7 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/create-account",
     element: <CreateAccount />,
-  },
+  },{
+    path:"/reset-password",
+    element: <ResetPassword />,
+  }
 ]);
 
 const GlobalStyles = createGlobalStyle`
